@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row">
+        <h1>Peer ID:</h1>
+        <h3>{{peerId}}</h3>
+        <div class="card" style="height: 400px; width:600px;border: 2px solid;" id="remote-video">
+
+        </div>
+        <div class="form-group">
+            <label for="PeerID"></label>
+            <input type="text" class="form-control" [(ngModel)]='peerIdShare' aria-describedby="emailHelp" placeholder="Enter Friend ID">
+        </div>
+        <div class="btn-group mt-5" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-primary" (click)="audioCallFriend()" >Audio Call</button>
+            <button type="button" class="btn btn-primary" (click)="videoCallFriend()" >Video Call</button>
+            <button type="button" class="btn btn-primary" (click)="screenShare()">Share Screen</button>
+            <button type="button" class="btn btn-danger" (click)="disconnect()">Disconnect</button>
+          </div>
+    </div>
+</div>
